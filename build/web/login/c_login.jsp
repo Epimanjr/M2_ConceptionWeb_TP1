@@ -7,6 +7,8 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 
+
+
 <%
     // Test de la connexion
     if(request.getParameter("login").equals("titi") 
@@ -14,6 +16,8 @@
         // OK
         session.setAttribute("login", "OK");
         response.sendRedirect("v_connect.jsp");
+        
+        
     } else {
         // NON OK
         session.setAttribute("login", "KO");
