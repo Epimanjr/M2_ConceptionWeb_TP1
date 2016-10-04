@@ -8,6 +8,7 @@
 <!DOCTYPE html>
 
 <jsp:useBean id="unAbon" scope="session" class="login.Abonne"/>
+<jsp:useBean id="cpt" scope="session" class="login.Compteur"/>
 
 <html>
     <head>
@@ -17,5 +18,7 @@
     <body>
         <h1>Hello <jsp:getProperty name="unAbon" property="login" />!</h1>
         <h2>Ton mot de passe : <jsp:getProperty name="unAbon" property="mdp" /></h2>
+        
+        <h3>Compteur: <jsp:getProperty name="cpt" property="cpt" /></h3>
     </body>
 </html>

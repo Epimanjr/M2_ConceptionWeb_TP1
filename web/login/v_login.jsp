@@ -13,7 +13,7 @@
     </head>
     <body>
         <% session.setAttribute("login", "KO");   %>
-        <form action="c_login.jsp">
+        <form action="c_login_1.jsp">
             <p> Login : <input type="text" name="login" /></p>
             <p> Password : <input type="text" name="mdp" /></p>
             <input type="submit" value="Je m'identifie" />

@@ -9,7 +9,7 @@ public class Compteur {
     /**
      * Valeur du compteur.
      */
-    protected int cpt;
+    public int cpt;
 
     public Compteur() {
         cpt = 0;
