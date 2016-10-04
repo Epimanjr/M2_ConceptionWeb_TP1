@@ -4,21 +4,17 @@
     Author     : Maxime BLAISE
 --%>
 
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
+<jsp:useBean id="cpt" scope="session" class="login.Compteur"/>
+<jsp:useBean id="unAbon" scope="session" class="login.Abonne"/>
 
-<%
-    // Test de la connexion
-    if(request.getParameter("login").equals("titi") 
-            && request.getParameter("passwd").equals("123")) {
-        // OK
-        session.setAttribute("login", "OK");
-        response.sendRedirect("v_connect.jsp");
-        
-        
+<jsp:setProperty name="unAbon" property="*" />
+
+<jsp:scriptlet>
+    cpt.incCpt();
+    
+    if((cpt.getCpt() % 2) == 0) {
+        pageContext.forward("v_accueil.jsp");
     } else {
-        // NON OK
-        session.setAttribute("login", "KO");
-        response.sendRedirect("v_login.jsp");
+        pageContext.forward("v_login.jsp");
     }
-%>
+</jsp:scriptlet>

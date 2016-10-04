@@ -12,7 +12,7 @@ public class Compteur {
     protected int cpt;
 
     public Compteur() {
-        cpt = 1;
+        cpt = 0;
     }
 
     public int getCpt() {
