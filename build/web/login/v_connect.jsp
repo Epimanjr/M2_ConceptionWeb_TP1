@@ -1,7 +1,7 @@
 <%-- 
     Document   : v_connect
     Created on : 27 sept. 2016, 16:13:29
-    Author     : maxim
+    Author     : Maxime BLAISE
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>

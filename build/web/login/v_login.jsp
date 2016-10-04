@@ -1,7 +1,7 @@
 <%-- 
     Document   : v_login
     Created on : 27 sept. 2016, 16:07:31
-    Author     : maxim
+    Author     : Maxime BLAISE
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
