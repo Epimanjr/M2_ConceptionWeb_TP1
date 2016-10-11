@@ -2,6 +2,7 @@ package login;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Vector;
 
@@ -105,7 +106,7 @@ public class MySQLDAOAbonne implements GenDAO<Abonne, Integer> {
     // #[regen=yes,id=DCE.4A12BD27-5601-4EDD-9CE6-28982F89E774]
     // </editor-fold> 
     public Collection<Abonne> select(Abonne unAbonne) {
-        Vector<Abonne> lesAbonnes = new Vector<Abonne>();
+        ArrayList<Abonne> lesAbonnes = new ArrayList<Abonne>();
         String sql = "Select * FROM abonne where ";
         int critereID = unAbonne.getIdAbonne();
         String critereNom = unAbonne.getLoginAbonne();

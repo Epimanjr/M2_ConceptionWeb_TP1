@@ -15,7 +15,7 @@ public class Abonne {
 
     protected int idAbonne;
     
-    protected String loginAbonne;
+    public String loginAbonne;
 
     protected String mdpAbonne;
 

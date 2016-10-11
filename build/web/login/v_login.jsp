@@ -14,8 +14,8 @@
     <body>
         <% session.setAttribute("login", "KO");   %>
         <form action="c_login.jsp">
-            <p> Login : <input type="text" name="login" /></p>
-            <p> Password : <input type="text" name="mdp" /></p>
+            <p> Login : <input type="text" name="loginAbonne" /></p>
+            <p> Password : <input type="text" name="mdpAbonne" /></p>
             <input type="submit" value="Je m'identifie" />
         </form>
     </body>
