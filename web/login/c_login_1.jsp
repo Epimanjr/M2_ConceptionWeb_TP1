@@ -20,4 +20,4 @@
 <c:if test="${((compteur mod 2)==0)}">
     <jsp:forward page="v_accueil.jsp" />
 </c:if>
-<jsp:forward page="v_accueil.jsp" />
+<jsp:forward page="v_login.jsp" />

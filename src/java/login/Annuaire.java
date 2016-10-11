@@ -16,10 +16,20 @@ public class Annuaire {
     /**
      * Liste des abonnés.
      */
-    private final ArrayList<Abonne> listAbonnes;
+    public final ArrayList<Abonne> listAbonnes;
 
     public Annuaire() {
         this.listAbonnes = new ArrayList<>();
+    }
+    
+    public void add(Abonne unAbon) {
+        if(!listAbonnes.contains(unAbon)) {
+            listAbonnes.add(unAbon);
+        }
+    }
+
+    public ArrayList<Abonne> getListAbonnes() {
+        return listAbonnes;
     }
     
     

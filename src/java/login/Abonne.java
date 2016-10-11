@@ -5,34 +5,84 @@
  */
 package login;
 
+import java.util.Objects;
+
 /**
  *
  * @author Maxime BLAISE
  */
 public class Abonne {
+
+    protected int idAbonne;
     
-    protected String login;
-    
-    protected String mdp;
+    protected String loginAbonne;
+
+    protected String mdpAbonne;
 
     public Abonne() {
+        idAbonne = -1;
+        loginAbonne = "";
+        mdpAbonne = "";
     }
 
-    public String getLogin() {
-        return login;
+    @Override
+    public int hashCode() {
+        int hash = 5;
+        hash = 17 * hash + this.idAbonne;
+        hash = 17 * hash + Objects.hashCode(this.loginAbonne);
+        hash = 17 * hash + Objects.hashCode(this.mdpAbonne);
+        return hash;
     }
 
-    public void setLogin(String login) {
-        this.login = login;
-    }
-
-    public String getMdp() {
-        return mdp;
-    }
-
-    public void setMdp(String mdp) {
-        this.mdp = mdp;
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Abonne other = (Abonne) obj;
+        if (this.idAbonne != other.idAbonne) {
+            return false;
+        }
+        if (!Objects.equals(this.loginAbonne, other.loginAbonne)) {
+            return false;
+        }
+        if (!Objects.equals(this.mdpAbonne, other.mdpAbonne)) {
+            return false;
+        }
+        return true;
     }
     
     
+
+    public int getIdAbonne() {
+        return idAbonne;
+    }
+
+    public void setIdAbonne(int idAbonne) {
+        this.idAbonne = idAbonne;
+    }
+
+    public String getLoginAbonne() {
+        return loginAbonne;
+    }
+
+    public void setLoginAbonne(String loginAbonne) {
+        this.loginAbonne = loginAbonne;
+    }
+
+    public String getMdpAbonne() {
+        return mdpAbonne;
+    }
+
+    public void setMdpAbonne(String mdpAbonne) {
+        this.mdpAbonne = mdpAbonne;
+    }
+
+
 }
